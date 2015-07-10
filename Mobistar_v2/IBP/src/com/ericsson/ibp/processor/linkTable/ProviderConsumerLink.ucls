@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.1" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" language="java" name="com.ericsson.ibp.processor.linkTable.UpdateLinkTableInt" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/UpdateLinkTableInt.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="79" width="251" x="-86" y="-4"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="com.ericsson.ibp.processor.linkTable.UpdateLinkTableAbst" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/UpdateLinkTableAbst.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="151" width="214" x="230" y="-38"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.ericsson.ibp.processor.linkTable.ActivationBaseProduct" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/ActivationBaseProduct.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="151" width="332" x="-226" y="80"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.ericsson.ibp.processor.linkTable.ActivationPartiallySharedExplicit" 
+    project="IBP" file="/IBP/src/com/ericsson/ibp/processor/linkTable/ActivationPartiallySharedExplicit.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="251" x="-116" y="254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.ericsson.ibp.processor.linkTable.ActivationPartiallySharedImplicit" 
+    project="IBP" file="/IBP/src/com/ericsson/ibp/processor/linkTable/ActivationPartiallySharedImplicit.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="240" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.ericsson.ibp.processor.linkTable.ActivationSumNShare" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/ActivationSumNShare.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="265" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.ericsson.ibp.processor.linkTable.ActivatonFullyShared" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/ActivatonFullyShared.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="502" y="195"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.ericsson.ibp.processor.linkTable.Deactivation" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/Deactivation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="525" y="303"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.ericsson.ibp.processor.linkTable.MSISDNChange" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/MSISDNChange.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="573" y="416"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.ericsson.ibp.processor.linkTable.RatePlanChange" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/RatePlanChange.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="307" y="417"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.ericsson.ibp.processor.linkTable.Refill" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/Refill.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="37" y="416"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.ericsson.ibp.processor.linkTable.ContractTakeover" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/linkTable/ContractTakeover.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-221" y="419"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <generalization id="13">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <realization id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="20">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="22">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="23">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

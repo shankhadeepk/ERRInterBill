@@ -1,0 +1,44 @@
+DROP VIEW SYSADM.IBP_VIEW;
+
+/* Formatted on 02-05-2013 17:27:21 (QP5 v5.115.810.9015) */
+CREATE OR REPLACE FORCE VIEW SYSADM.IBP_VIEW
+(
+   CUSTOMER_ID,
+   CO_ID,
+   DN_NUM,
+   BILLCYCLE,
+   TMCODE,
+   SCCODE,
+   CH_STATUS
+)
+AS
+   SELECT   c.customer_id,
+            d.co_id,
+            b.dn_num,
+            c.billcycle,
+            d.tmcode,
+            d.sccode,
+            e.ch_status
+     FROM   contr_services_cap a,
+            directory_number b,
+            customer_all c,
+            contract_all d,
+            contract_history e,
+            rateplan_hist f
+    WHERE       a.dn_id = b.dn_id
+            AND d.customer_id = c.customer_id
+            AND d.co_id = a.co_id
+            AND e.co_id = a.co_id
+            AND f.co_id = a.co_id
+            AND e.ch_seqno =
+                  (SELECT   MAX (ch_seqno)
+                     FROM   contract_history
+                    WHERE   co_id = a.co_id AND ch_pending IS NULL)
+            AND f.seqno = (SELECT   MAX (seqno)
+                             FROM   rateplan_hist
+                            WHERE   co_id = a.co_id)
+            AND a.seqno = (SELECT   MAX (seqno)
+                             FROM   contr_services_cap
+                            WHERE   co_id = a.co_id AND sncode = 1)
+            AND a.sncode = 1;
+

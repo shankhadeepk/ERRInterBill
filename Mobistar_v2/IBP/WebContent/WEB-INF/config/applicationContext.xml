@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+           
+    <!-- the bean is used to hold an application context instance for the application -->       
+    <bean id="springContextHolder" class="com.ericsson.ibp.web.listeners.SpringContextHolder"/>
+           
+    <!-- read the properties file -->       
+    <bean id="placeholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>/WEB-INF/config/IBP.properties</value>
+				<value>/WEB-INF/config/database.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+    <context:annotation-config/>
+    
+    <!-- Added by Krishnendu -->
+	<bean name="action"
+		class="com.ericsson.ibp.data.model.ActionActivity"
+		scope="prototype">
+		
+		<property name="actionMap">
+        <map>
+           <entry key="contractactivation" value="Activation"/>
+           <entry key="contractdeactivation" value="Deactivation"/>
+           <entry key="rateplanchange" value="Deactivation,Activation"/>
+           <entry key="msisdnchange" value="changeMSISDN"/>
+        </map>
+      </property>
+		
+		
+		
+	</bean>
+    
+    <!-- Ended by Krishnendu -->
+    
+    <!-- initialize the logger -->
+    <bean id="LoggerInitializer" class="com.ericsson.ibp.generic.utils.LoggerInitializer"/>
+   
+    <!-- initialize the datasource(s) -->
+    <import resource="db-config.xml" />
+   
+    <!-- next initialize the application beans and start the required processes -->
+    <import resource="applicationBeans.xml"/>
+    
+</beans>

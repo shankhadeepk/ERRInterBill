@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.1" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" language="java" name="com.ericsson.ibp.processor.orderline.ProcessorInt" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/orderline/ProcessorInt.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="79" width="264" x="468" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="com.ericsson.ibp.processor.orderline.InstallSubscriber" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/orderline/InstallSubscriber.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="216" x="198" y="280"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.ericsson.ibp.processor.orderline.UpdateOffer" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/orderline/UpdateOffer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="233" x="751" y="282"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.ericsson.ibp.processor.orderline.DeleteOffer" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/orderline/DeleteOffer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="244" x="752" y="152"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.ericsson.ibp.processor.orderline.UpdateCommunicationId" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/orderline/UpdateCommunicationId.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="96" width="260" x="450" y="283"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.ericsson.ibp.processor.orderline.DeletePeriodicAccountManagementData" 
+    project="IBP" file="/IBP/src/com/ericsson/ibp/processor/orderline/DeletePeriodicAccountManagementData.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="452" y="152"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.ericsson.ibp.processor.orderline.DeleteSubscriber" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/orderline/DeleteSubscriber.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="212" x="205" y="154"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.ericsson.ibp.processor.orderline.UpdatePeriodicAccountManagementData" 
+    project="IBP" file="/IBP/src/com/ericsson/ibp/processor/orderline/UpdatePeriodicAccountManagementData.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="286" x="154" y="398"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.ericsson.ibp.processor.orderline.UpdateTemporaryBlocked" project="IBP" 
+    file="/IBP/src/com/ericsson/ibp/processor/orderline/UpdateTemporaryBlocked.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="247" x="461" y="399"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.ericsson.ibp.processor.orderline.UpdateUsageThresholdsAndCounters" 
+    project="IBP" file="/IBP/src/com/ericsson/ibp/processor/orderline/UpdateUsageThresholdsAndCounters.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="91" width="265" x="745" y="400"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <realization id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="12">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="13">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="14">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="15">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="16">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="17">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="18">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="19">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

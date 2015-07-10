@@ -1,0 +1,153 @@
+DROP TRIGGER SYSADM.IBP_CONTRACT_UPDATE;
+
+CREATE OR REPLACE TRIGGER SYSADM.IBP_CONTRACT_UPDATE
+AFTER DELETE OR INSERT OR UPDATE
+OF CH_PENDING
+ON SYSADM.CONTRACT_HISTORY 
+REFERENCING NEW AS NEW OLD AS OLD
+FOR EACH ROW
+DECLARE
+   TICKLER_COUNT   NUMBER := 0;                 
+
+BEGIN
+   IF (:NEW.CH_SEQNO > 1)
+   THEN
+      IF UPDATING AND (:OLD.CH_PENDING = 'X' AND :NEW.CH_PENDING IS NULL)
+      THEN                   
+                  
+         INSERT INTO IBP_STAGING (
+                                     REQ_ID,
+                                     TIMESTAMP,
+                                     CO_ID,
+                                     SEQ,   
+                                     CH_REASON,
+                                     ACTION_ID                                     
+                    )
+           VALUES   (
+                        IBP_STAGING_SEQ.NEXTVAL,
+                        SYSDATE,
+                        :NEW.CO_ID,
+                        :NEW.CH_SEQNO, 
+                        :NEW.CH_REASON,
+                        CASE
+                           WHEN :new.ch_status = 's'
+                           THEN
+                              3
+                           WHEN :new.ch_status = 'd'
+                           THEN
+                              2
+                           WHEN :new.ch_status = 'a' AND :new.ch_seqno > 3
+                           THEN
+                              4
+                           WHEN :new.ch_status = 'a' AND :new.ch_seqno <= 3
+                           THEN
+                              1
+                        END
+                    );
+      ELSIF INSERTING AND (:NEW.CH_PENDING IS NULL)
+      THEN
+         IF (:new.CH_STATUS = 'a' OR :new.CH_STATUS = 's')
+         THEN
+            SELECT   COUNT ( * )
+              INTO   TICKLER_COUNT
+              FROM   tickler_records
+             WHERE   CO_ID = :new.CO_ID
+                     AND SHORT_DESCRIPTION LIKE 'CO TAKEOVER TO';
+           
+            IF (TICKLER_COUNT = 0)
+            THEN
+               INSERT INTO IBP_STAGING (
+                                           REQ_ID,
+                                           TIMESTAMP,
+                                           CO_ID,  
+                                           SEQ,  
+                                           CH_REASON,
+                                           ACTION_ID
+                          )
+                 VALUES   (
+                              IBP_STAGING_SEQ.NEXTVAL,
+                              SYSDATE,
+                              :NEW.CO_ID, 
+                              :NEW.CH_SEQNO,
+                              :NEW.CH_REASON,
+                              CASE
+                                 WHEN :new.ch_status = 's'
+                                 THEN
+                                    3
+                                 WHEN :new.ch_status = 'd'
+                                 THEN
+                                    2
+                                 WHEN :new.ch_status = 'a'
+                                      AND:new.ch_seqno > 3
+                                 THEN
+                                    4
+                                 WHEN :new.ch_status = 'a'
+                                      AND:new.ch_seqno <= 3
+                                 THEN
+                                    1
+                              END
+                          );
+            END IF;
+         ELSIF (:new.CH_STATUS = 'd')
+         THEN
+            SELECT   COUNT ( * )
+              INTO   TICKLER_COUNT
+              FROM   tickler_records e
+             WHERE   CO_ID = :new.CO_ID
+                     AND SHORT_DESCRIPTION LIKE 'CO TAKEOVER FROM';
+          
+            IF (TICKLER_COUNT = 0)
+            THEN
+               INSERT INTO IBP_STAGING (
+                                           REQ_ID,
+                                           TIMESTAMP,
+                                           CO_ID,
+                                           SEQ,    
+                                           CH_REASON,
+                                           ACTION_ID
+                          )
+                 VALUES   (
+                              IBP_STAGING_SEQ.NEXTVAL,
+                              SYSDATE,
+                              :NEW.CO_ID,   
+                              :NEW.CH_SEQNO,      
+                              :NEW.CH_REASON,
+                              CASE
+                                 WHEN :new.ch_status = 's'
+                                 THEN
+                                    3
+                                 WHEN :new.ch_status = 'd'
+                                 THEN
+                                    2
+                                 WHEN :new.ch_status = 'a'
+                                      AND:new.ch_seqno > 3
+                                 THEN
+                                    4
+                                 WHEN :new.ch_status = 'a'
+                                      AND:new.ch_seqno <= 3
+                                 THEN
+                                    1
+                              END
+                          );
+            END IF;
+         END IF;
+      ELSIF DELETING AND :NEW.CH_PENDING IS NULL AND :NEW.CH_STATUS = 'd'
+      THEN  
+        
+         INSERT INTO IBP_STAGING (REQ_ID,
+                                  TIMESTAMP,
+                                  CO_ID, 
+                                  SEQ,     
+                                  CH_REASON,
+                                  ACTION_ID)
+           VALUES   (IBP_STAGING_SEQ.NEXTVAL,
+                     SYSDATE,
+                     :OLD.CO_ID, 
+                     :OLD.CH_SEQNO,  
+                     :OLD.CH_REASON,
+                     1);
+      END IF;
+   END IF;
+END;
+/
+

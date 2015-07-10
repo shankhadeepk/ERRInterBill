@@ -1,0 +1,370 @@
+2013-06-07/16:50:39.161  INFO (LoggerInitializer.java:39) - Logger has been configured with the basis of default configuration..
+2013-06-07/16:50:39.451  INFO (IBPLoadTables.java:508) - =============  Loading IBP Configuration data ==================
+2013-06-07/16:51:03.482 DEBUG (IBPLoadTables.java:62) - The List of {ibpBSCSActions_Rows} is :[IBPBSCSActions_Row:[BSCS Action Id=1,BSCS Action Name=CONTRACT_ACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=2,BSCS Action Name=CONTRACT_DEACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=3,BSCS Action Name=CONTRACT_SUSPENSION], IBPBSCSActions_Row:[BSCS Action Id=4,BSCS Action Name=CONTRACT_REACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=5,BSCS Action Name=SERVICE_ACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=6,BSCS Action Name=SERVICE_DEACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=7,BSCS Action Name=SERVICE_PARAM_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=8,BSCS Action Name=IMSI_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=9,BSCS Action Name=MSISDN_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=10,BSCS Action Name=BILL_CYCLE_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=11,BSCS Action Name=CONTRACT_TAKEOVER], IBPBSCSActions_Row:[BSCS Action Id=12,BSCS Action Name=RATE_PLAN_CHANGE]]
+2013-06-07/16:51:03.970 DEBUG (IBPLoadTables.java:123) - The List of {ibPProductTypeDefinition_Rows} is : [IBPProductTypeDefinition_Row:[Product-Type=SERVICE_LIMIT], IBPProductTypeDefinition_Row:[Product-Type=PCRF_PROFILE_CHANGE], IBPProductTypeDefinition_Row:[Product-Type=DEFAULT_OFFER], IBPProductTypeDefinition_Row:[Product-Type=MZ_PROFILE_CHANGE], IBPProductTypeDefinition_Row:[Product-Type=Roaming Limit Change], IBPProductTypeDefinition_Row:[Product-Type=FULLY_SHARED], IBPProductTypeDefinition_Row:[Product-Type=PARTIALLY_SHARED_IMPL], IBPProductTypeDefinition_Row:[Product-Type=PARTIALLY_SHARED_EXPL], IBPProductTypeDefinition_Row:[Product-Type=MONOLITHIC], IBPProductTypeDefinition_Row:[Product-Type=SUM_N_SHARE]]
+2013-06-07/16:51:03.972 DEBUG (IBPLoadTables.java:495) - The Product type ::Roaming Limit Change :: is not present in Constants
+2013-06-07/16:51:04.478 DEBUG (IBPLoadTables.java:170) - The List {ibpProductConfiguration_Rows} is : [
+IBPProductConfiguration_Row: [8-303-0-0-PARTIALLY_SHARED_IMPL-1247-9999-2-97#101-null-QOS0-QOS3,QOS4-999-PROFILE1,PROFILE2-
+DATA-N-N-N], 
+IBPProductConfiguration_Row: [7-105-1-1-PARTIALLY_SHARED_EXPL-*-9997-3-null-null-QOS0-null-999-PROFILE0-
+DATA-N-N-REF999], 
+IBPProductConfiguration_Row: [32-278-0-0-SERVICE_LIMIT-*-9595-8-null-null-QOSSERV_L-QOS_SRV_LIM1-999-PRO_SRV_LIMIT-
+DATA-N-N-REF888], 
+IBPProductConfiguration_Row: [55-4323-1-1-PCRF_PROFILE_CHANGE-*-8765-6-null-null-QOSPCRF-QOSPCRF13-999-null-
+null-N-N-REFPC1], 
+IBPProductConfiguration_Row: [99-111-0-0-PARTIALLY_SHARED_EXPL-1111-5017-3-null-null-1-MN, MP-1-null-
+null-null-null-null], 
+IBPProductConfiguration_Row: [33-302-0-0-FULLY_SHARED-2096-5012-1-null-null-1-MN, MP-1-null-
+null-Y-N-null], 
+IBPProductConfiguration_Row: [9-301-0-0-SUM_N_SHARE-2095-5011-5-null-14-QOS1,QOS2-QOS3-999-PROFILE0-
+DATA-N-N-REF999], 
+IBPProductConfiguration_Row: [3-102-0-0-FULLY_SHARED-0-5657-1-null-null-QOS1,QOS2-null-999-PROFILE1,PROFILE2-
+DATA-Y-N-REF102], 
+IBPProductConfiguration_Row: [4-103-1-1-FULLY_SHARED-*-5658-1-null-null-QOS1,QOS2-QOS3,QOS4-999-null-
+DATA-N-N-REF103], 
+IBPProductConfiguration_Row: [5-201-1-1-MONOLITHIC-*-4545-4-null-null-QOS3-QOS4-999-PROFILE3-
+DATA-Y-N-REF201], 
+IBPProductConfiguration_Row: [6-202-0-0-MONOLITHIC-1001-4546-4-null-null-QOS3-null-999-null-
+DATA-N-N-REF202], 
+IBPProductConfiguration_Row: [11-1234-0-0-MZ_PROFILE_CHANGE-*-1233-7-null-null-null-null-999-PRO1,PRO2-
+DATA-N-N-REFXXX], 
+IBPProductConfiguration_Row: [1-999-0-0-DEFAULT_OFFER-*-1000-9-null-null-QOS0-null-999-PROFILE0-
+DATA-N-Y-REF999], 
+IBPProductConfiguration_Row: [2-101-0-0-FULLY_SHARED-*-5656-1-null-null-QOS1,QOS2-xz-999-PROFILE1,PROFILE2-
+DATA-N-N-REF101]]
+2013-06-07/16:51:04.734 DEBUG (IBPLoadTables.java:94) - The List of  {ibpBillCycleVSPamservice_Rows} is : [IBPBillCycleVSPamservice_Row:[Bill Cycle =1,Pam Class =101,Schedule Id =120,proration =Y], IBPBillCycleVSPamservice_Row:[Bill Cycle =10,Pam Class =220,Schedule Id =202,proration =N]]
+2013-06-07/16:51:05.003 DEBUG (IBPLoadTables.java:222) - The List of {IBPParameterTranslation_Row} is : [IBPParameterTranslation_Row:[Service_Param=PBC_NONE [0], Monetory Amt = 50, Threshold= 50], IBPParameterTranslation_Row:[Service_Param=PBC_050 [10], Monetory Amt = 200, Threshold= 100], IBPParameterTranslation_Row:[Service_Param=PBC_878 [11], Monetory Amt = 300, Threshold= 200], IBPParameterTranslation_Row:[Service_Param=PCB_ONE, Monetory Amt = 1050, Threshold= 51], IBPParameterTranslation_Row:[Service_Param=PCB_SRV_LIMIT, Monetory Amt = 80, Threshold= 70], IBPParameterTranslation_Row:[Service_Param=DEFAULT, Monetory Amt = 50, Threshold= 50]]
+2013-06-07/16:51:28.171 DEBUG (IBPLoadTables.java:243) - The List of {BillCycleDay Row} is : [com.ericsson.ibp.configuration.VO.BillCycleDay_Row@3f01a76a, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@5964077, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@4b62477e, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@2143c7dc, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@68f64d93, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@25f23bb, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@3422cb34, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@584adda9, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@1b1eaf88, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@7b9617a0, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@3ae948c3, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@29a8186c, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@5adb6fd1]
+2013-06-07/16:51:28.173  INFO (IBPLoadTables.java:575) - =============  IBP configuration loaded successfully ==================
+2013-06-07/16:51:28.191 DEBUG (Workflow.java:40) - About to load the Workflow configuration from database..
+2013-06-07/16:51:33.010 DEBUG (Workflow.java:69) - The workflow details are loaded as :Key:3-0 - BSCSAction:3 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateTemporaryBlocked
+---PCRFActions:
+---MZActions:
+Key:5-6 - BSCSAction:5 - Product Type:6
+---MBCActions:
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+Key:5-7 - BSCSAction:5 - Product Type:7
+---MBCActions:
+---PCRFActions:
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:8-0 - BSCSAction:8 - Product Type:0
+---MBCActions:
+---PCRFActions:
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_IMSI
+Key:5-0 - BSCSAction:5 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateOffer
+---Seq :2, Action:Refill
+---Seq :3, Action:RunPeriodicAccountManagement
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:7-9 - BSCSAction:7 - Product Type:9
+---MBCActions:
+---Seq :1, Action:UpdateUsageThresholdsAndCounters
+---PCRFActions:
+---MZActions:
+Key:7-8 - BSCSAction:7 - Product Type:8
+---MBCActions:
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+Key:10-0 - BSCSAction:10 - Product Type:0
+---MBCActions:
+---Seq :1, Action:DeletePeriodicAccountManagementData
+---Seq :2, Action:UpdatePeriodicAccountManagementData
+---PCRFActions:
+---MZActions:
+Key:7-7 - BSCSAction:7 - Product Type:7
+---MBCActions:
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+Key:4-0 - BSCSAction:4 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateTemporaryBlocked
+---PCRFActions:
+---MZActions:
+Key:7-6 - BSCSAction:7 - Product Type:6
+---MBCActions:
+---PCRFActions:
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:2-0 - BSCSAction:2 - Product Type:0
+---MBCActions:
+---Seq :1, Action:DeleteOffer
+---Seq :2, Action:DeleteSubscriber
+---PCRFActions:
+---Seq :1, Action:PCRF_CONTRACT_REMOVE
+---MZActions:
+---Seq :1, Action:MZ_CONTRACT_REMOVE
+Key:6-0 - BSCSAction:6 - Product Type:0
+---MBCActions:
+---Seq :1, Action:DeleteOffer
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:1-9 - BSCSAction:1 - Product Type:9
+---MBCActions:
+---Seq :1, Action:InstallSubscriber
+---Seq :2, Action:GetBalanceAndDate
+---Seq :3, Action:UpdateOffer
+---Seq :4, Action:Refill
+---Seq :5, Action:UpdateUsageThresholdsAndCounters
+---PCRFActions:
+---Seq :1, Action:PCRF_CONTRACT_CREATE
+---MZActions:
+---Seq :1, Action:MZ_CONTRACT_CREATE
+Key:7-3 - BSCSAction:7 - Product Type:3
+---MBCActions:
+---Seq :1, Action:DeleteOffer
+---Seq :2, Action:UpdateOffer
+---PCRFActions:
+---MZActions:
+Key:1-0 - BSCSAction:1 - Product Type:0
+---MBCActions:
+---Seq :1, Action:InstallSubscriber
+---Seq :2, Action:GetBalanceAndDate
+---Seq :3, Action:UpdateOffer
+---Seq :4, Action:Refill
+---Seq :5, Action:RunPeriodicAccountManagement
+---PCRFActions:
+---Seq :1, Action:PCRF_CONTRACT_CREATE
+---MZActions:
+---Seq :1, Action:MZ_CONTRACT_CREATE
+Key:9-0 - BSCSAction:9 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateCommunicationId
+---Seq :2, Action:DeleteOffer
+---Seq :3, Action:UpdateOffer
+---Seq :4, Action:Refill
+---Seq :5, Action:RunPeriodicAccountManagement
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_MSISDN
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_MSISDN
+Key:5-8 - BSCSAction:5 - Product Type:8
+---MBCActions:
+---Seq :1, Action:UpdateUsageThresholdsAndCounters
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+
+2013-06-07/16:51:33.021 DEBUG (EngineInitializer.java:23) - About to initialize the Velocity Enging
+2013-06-07/16:51:33.128  INFO (EngineInitializer.java:41) - The velocity engine is now initialized..
+2013-06-07/16:51:33.134  INFO (ExecuteStagingThreadPool.java:45) - The thread pool has been initialized with 1 threads
+2013-06-07/16:51:33.137  INFO (ExecutorThreadPool.java:47) - The thread pool has been initialized with 1 threads
+2013-06-07/16:51:38.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:51:38.168 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS='U' order by REQ_ID
+2013-06-07/16:51:38.412 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:51:38.413 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:51:48.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:51:48.168 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:51:48.410 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:51:48.411 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:51:58.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:51:58.167 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:51:58.411 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:51:58.412 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:08.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:52:08.168 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:52:08.423 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:08.424 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:18.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:52:18.168 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:52:18.410 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:18.411 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:28.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:52:28.167 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:52:28.409 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:28.411 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:38.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:52:38.168 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:52:38.410 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:38.410 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:48.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:52:48.167 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:52:48.409 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:48.410 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:58.167 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:52:58.167 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS is NULL and rownum<=100 order by REQ_ID
+2013-06-07/16:52:58.410 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:52:58.411 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:55:57.212  INFO (LoggerInitializer.java:39) - Logger has been configured with the basis of default configuration..
+2013-06-07/16:55:57.415  INFO (IBPLoadTables.java:508) - =============  Loading IBP Configuration data ==================
+2013-06-07/16:56:20.973 DEBUG (IBPLoadTables.java:62) - The List of {ibpBSCSActions_Rows} is :[IBPBSCSActions_Row:[BSCS Action Id=1,BSCS Action Name=CONTRACT_ACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=2,BSCS Action Name=CONTRACT_DEACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=3,BSCS Action Name=CONTRACT_SUSPENSION], IBPBSCSActions_Row:[BSCS Action Id=4,BSCS Action Name=CONTRACT_REACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=5,BSCS Action Name=SERVICE_ACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=6,BSCS Action Name=SERVICE_DEACTIVATION], IBPBSCSActions_Row:[BSCS Action Id=7,BSCS Action Name=SERVICE_PARAM_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=8,BSCS Action Name=IMSI_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=9,BSCS Action Name=MSISDN_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=10,BSCS Action Name=BILL_CYCLE_CHANGE], IBPBSCSActions_Row:[BSCS Action Id=11,BSCS Action Name=CONTRACT_TAKEOVER], IBPBSCSActions_Row:[BSCS Action Id=12,BSCS Action Name=RATE_PLAN_CHANGE]]
+2013-06-07/16:56:21.457 DEBUG (IBPLoadTables.java:123) - The List of {ibPProductTypeDefinition_Rows} is : [IBPProductTypeDefinition_Row:[Product-Type=SERVICE_LIMIT], IBPProductTypeDefinition_Row:[Product-Type=PCRF_PROFILE_CHANGE], IBPProductTypeDefinition_Row:[Product-Type=DEFAULT_OFFER], IBPProductTypeDefinition_Row:[Product-Type=MZ_PROFILE_CHANGE], IBPProductTypeDefinition_Row:[Product-Type=Roaming Limit Change], IBPProductTypeDefinition_Row:[Product-Type=FULLY_SHARED], IBPProductTypeDefinition_Row:[Product-Type=PARTIALLY_SHARED_IMPL], IBPProductTypeDefinition_Row:[Product-Type=PARTIALLY_SHARED_EXPL], IBPProductTypeDefinition_Row:[Product-Type=MONOLITHIC], IBPProductTypeDefinition_Row:[Product-Type=SUM_N_SHARE]]
+2013-06-07/16:56:21.457 DEBUG (IBPLoadTables.java:495) - The Product type ::Roaming Limit Change :: is not present in Constants
+2013-06-07/16:56:21.960 DEBUG (IBPLoadTables.java:170) - The List {ibpProductConfiguration_Rows} is : [
+IBPProductConfiguration_Row: [8-303-0-0-PARTIALLY_SHARED_IMPL-1247-9999-2-97#101-null-QOS0-QOS3,QOS4-999-PROFILE1,PROFILE2-
+DATA-N-N-N], 
+IBPProductConfiguration_Row: [7-105-1-1-PARTIALLY_SHARED_EXPL-*-9997-3-null-null-QOS0-null-999-PROFILE0-
+DATA-N-N-REF999], 
+IBPProductConfiguration_Row: [32-278-0-0-SERVICE_LIMIT-*-9595-8-null-null-QOSSERV_L-QOS_SRV_LIM1-999-PRO_SRV_LIMIT-
+DATA-N-N-REF888], 
+IBPProductConfiguration_Row: [55-4323-1-1-PCRF_PROFILE_CHANGE-*-8765-6-null-null-QOSPCRF-QOSPCRF13-999-null-
+null-N-N-REFPC1], 
+IBPProductConfiguration_Row: [99-111-0-0-PARTIALLY_SHARED_EXPL-1111-5017-3-null-null-1-MN, MP-1-null-
+null-null-null-null], 
+IBPProductConfiguration_Row: [33-302-0-0-FULLY_SHARED-2096-5012-1-null-null-1-MN, MP-1-null-
+null-Y-N-null], 
+IBPProductConfiguration_Row: [9-301-0-0-SUM_N_SHARE-2095-5011-5-null-14-QOS1,QOS2-QOS3-999-PROFILE0-
+DATA-N-N-REF999], 
+IBPProductConfiguration_Row: [3-102-0-0-FULLY_SHARED-0-5657-1-null-null-QOS1,QOS2-null-999-PROFILE1,PROFILE2-
+DATA-Y-N-REF102], 
+IBPProductConfiguration_Row: [4-103-1-1-FULLY_SHARED-*-5658-1-null-null-QOS1,QOS2-QOS3,QOS4-999-null-
+DATA-N-N-REF103], 
+IBPProductConfiguration_Row: [5-201-1-1-MONOLITHIC-*-4545-4-null-null-QOS3-QOS4-999-PROFILE3-
+DATA-Y-N-REF201], 
+IBPProductConfiguration_Row: [6-202-0-0-MONOLITHIC-1001-4546-4-null-null-QOS3-null-999-null-
+DATA-N-N-REF202], 
+IBPProductConfiguration_Row: [11-1234-0-0-MZ_PROFILE_CHANGE-*-1233-7-null-null-null-null-999-PRO1,PRO2-
+DATA-N-N-REFXXX], 
+IBPProductConfiguration_Row: [1-999-0-0-DEFAULT_OFFER-*-1000-9-null-null-QOS0-null-999-PROFILE0-
+DATA-N-Y-REF999], 
+IBPProductConfiguration_Row: [2-101-0-0-FULLY_SHARED-*-5656-1-null-null-QOS1,QOS2-xz-999-PROFILE1,PROFILE2-
+DATA-N-N-REF101]]
+2013-06-07/16:56:22.209 DEBUG (IBPLoadTables.java:94) - The List of  {ibpBillCycleVSPamservice_Rows} is : [IBPBillCycleVSPamservice_Row:[Bill Cycle =1,Pam Class =101,Schedule Id =120,proration =Y], IBPBillCycleVSPamservice_Row:[Bill Cycle =10,Pam Class =220,Schedule Id =202,proration =N]]
+2013-06-07/16:56:22.463 DEBUG (IBPLoadTables.java:222) - The List of {IBPParameterTranslation_Row} is : [IBPParameterTranslation_Row:[Service_Param=PBC_NONE [0], Monetory Amt = 50, Threshold= 50], IBPParameterTranslation_Row:[Service_Param=PBC_050 [10], Monetory Amt = 200, Threshold= 100], IBPParameterTranslation_Row:[Service_Param=PBC_878 [11], Monetory Amt = 300, Threshold= 200], IBPParameterTranslation_Row:[Service_Param=PCB_ONE, Monetory Amt = 1050, Threshold= 51], IBPParameterTranslation_Row:[Service_Param=PCB_SRV_LIMIT, Monetory Amt = 80, Threshold= 70], IBPParameterTranslation_Row:[Service_Param=DEFAULT, Monetory Amt = 50, Threshold= 50]]
+2013-06-07/16:56:45.254 DEBUG (IBPLoadTables.java:243) - The List of {BillCycleDay Row} is : [com.ericsson.ibp.configuration.VO.BillCycleDay_Row@5cd38dd, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@64503824, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@4e95f6ef, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@5786ed37, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@5b3fe2c5, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@3f412250, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@4d33d2a1, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@5496fa0, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@183f7416, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@6dde5cc9, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@219dc879, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@7dd4912c, com.ericsson.ibp.configuration.VO.BillCycleDay_Row@e87203e]
+2013-06-07/16:56:45.255  INFO (IBPLoadTables.java:575) - =============  IBP configuration loaded successfully ==================
+2013-06-07/16:56:45.267 DEBUG (Workflow.java:40) - About to load the Workflow configuration from database..
+2013-06-07/16:56:50.084 DEBUG (Workflow.java:69) - The workflow details are loaded as :Key:3-0 - BSCSAction:3 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateTemporaryBlocked
+---PCRFActions:
+---MZActions:
+Key:5-6 - BSCSAction:5 - Product Type:6
+---MBCActions:
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+Key:5-7 - BSCSAction:5 - Product Type:7
+---MBCActions:
+---PCRFActions:
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:8-0 - BSCSAction:8 - Product Type:0
+---MBCActions:
+---PCRFActions:
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_IMSI
+Key:5-0 - BSCSAction:5 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateOffer
+---Seq :2, Action:Refill
+---Seq :3, Action:RunPeriodicAccountManagement
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:7-9 - BSCSAction:7 - Product Type:9
+---MBCActions:
+---Seq :1, Action:UpdateUsageThresholdsAndCounters
+---PCRFActions:
+---MZActions:
+Key:7-8 - BSCSAction:7 - Product Type:8
+---MBCActions:
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+Key:10-0 - BSCSAction:10 - Product Type:0
+---MBCActions:
+---Seq :1, Action:DeletePeriodicAccountManagementData
+---Seq :2, Action:UpdatePeriodicAccountManagementData
+---PCRFActions:
+---MZActions:
+Key:7-7 - BSCSAction:7 - Product Type:7
+---MBCActions:
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+Key:4-0 - BSCSAction:4 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateTemporaryBlocked
+---PCRFActions:
+---MZActions:
+Key:7-6 - BSCSAction:7 - Product Type:6
+---MBCActions:
+---PCRFActions:
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:2-0 - BSCSAction:2 - Product Type:0
+---MBCActions:
+---Seq :1, Action:DeleteOffer
+---Seq :2, Action:DeleteSubscriber
+---PCRFActions:
+---Seq :1, Action:PCRF_CONTRACT_REMOVE
+---MZActions:
+---Seq :1, Action:MZ_CONTRACT_REMOVE
+Key:6-0 - BSCSAction:6 - Product Type:0
+---MBCActions:
+---Seq :1, Action:DeleteOffer
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+Key:1-9 - BSCSAction:1 - Product Type:9
+---MBCActions:
+---Seq :1, Action:InstallSubscriber
+---Seq :2, Action:GetBalanceAndDate
+---Seq :3, Action:UpdateOffer
+---Seq :4, Action:Refill
+---Seq :5, Action:UpdateUsageThresholdsAndCounters
+---PCRFActions:
+---Seq :1, Action:PCRF_CONTRACT_CREATE
+---MZActions:
+---Seq :1, Action:MZ_CONTRACT_CREATE
+Key:7-3 - BSCSAction:7 - Product Type:3
+---MBCActions:
+---Seq :1, Action:DeleteOffer
+---Seq :2, Action:UpdateOffer
+---PCRFActions:
+---MZActions:
+Key:1-0 - BSCSAction:1 - Product Type:0
+---MBCActions:
+---Seq :1, Action:InstallSubscriber
+---Seq :2, Action:GetBalanceAndDate
+---Seq :3, Action:UpdateOffer
+---Seq :4, Action:Refill
+---Seq :5, Action:RunPeriodicAccountManagement
+---PCRFActions:
+---Seq :1, Action:PCRF_CONTRACT_CREATE
+---MZActions:
+---Seq :1, Action:MZ_CONTRACT_CREATE
+Key:9-0 - BSCSAction:9 - Product Type:0
+---MBCActions:
+---Seq :1, Action:UpdateCommunicationId
+---Seq :2, Action:DeleteOffer
+---Seq :3, Action:UpdateOffer
+---Seq :4, Action:Refill
+---Seq :5, Action:RunPeriodicAccountManagement
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_MSISDN
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_MSISDN
+Key:5-8 - BSCSAction:5 - Product Type:8
+---MBCActions:
+---Seq :1, Action:UpdateUsageThresholdsAndCounters
+---PCRFActions:
+---Seq :1, Action:PCRF_MODIFY_PROFILES
+---MZActions:
+---Seq :1, Action:MZ_MODIFY_PROFILES
+
+2013-06-07/16:56:50.100 DEBUG (EngineInitializer.java:23) - About to initialize the Velocity Enging
+2013-06-07/16:56:50.191  INFO (EngineInitializer.java:41) - The velocity engine is now initialized..
+2013-06-07/16:56:50.196  INFO (ExecuteStagingThreadPool.java:45) - The thread pool has been initialized with 1 threads
+2013-06-07/16:56:50.215  INFO (ExecutorThreadPool.java:47) - The thread pool has been initialized with 1 threads
+2013-06-07/16:56:55.224 DEBUG (ReadStagingEntry.java:77) - About to poll to check if there are any new jobs that are to be processed [from staging table]
+2013-06-07/16:56:55.233 DEBUG (ReadStagingEntry.java:101) - Query for IBP_STAGING::SELECT REQ_ID , CO_ID FROM IBP_STAGING where REQUEST_STATUS='U' order by REQ_ID
+2013-06-07/16:56:55.476 DEBUG (ReadStagingEntry.java:160) - Updating the REQUEST_STATUS to 'U' for Request Id::[]
+2013-06-07/16:56:55.477 DEBUG (ReadStagingEntry.java:177) - Updation done for REQUEST_STATUS to 'U' for Request Id::[]

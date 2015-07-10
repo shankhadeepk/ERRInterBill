@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+           http://www.springframework.org/schema/aop 
+           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+
+	<bean id="BSCSdataSource" class="oracle.jdbc.pool.OracleDataSource"
+		destroy-method="close">
+		<property name="URL"
+			value="jdbc:oracle:thin:@${BSCS_serverName}:${BSCS_portNumber}:${BSCS_databaseName}" />
+		<property name="user" value="${BSCS_user}" />
+		<property name="password" value="${BSCS_password}" />
+
+		<!-- Pool properties -->
+		<property name="connectionCachingEnabled" value="true" />
+		<property name="connectionCacheName" value="BSCS_db_connection_pool" />
+		<property name="connectionCacheProperties">
+			<props>
+				<prop key="MinLimit">${BSCS_MinLimit}</prop>
+				<prop key="MaxLimit">${BSCS_MaxLimit}</prop>
+				<prop key="InitialLimit">${BSCS_InitialLimit}</prop>
+				<prop key="InactivityTimeout">${BSCS_InactivityTimeout}</prop>
+				<prop key="ConnectionWaitTimeout">${BSCS_ConnectionWaitTimeout}</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

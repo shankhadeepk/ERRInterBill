@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+           
+    <bean id="utils" class="com.ericsson.ibp.generic.utils.Utils"/>
+    
+    <bean id="dynamicUtils" class="com.ericsson.ibp.generic.utils.DynamicUtils" scope="prototype"/>
+    
+    <!-- For loading the tables -->
+	<bean id="IBPloadTables" 
+		class="com.ericsson.ibp.configurationDB.IBPLoadTables" init-method="loadTables">		
+		<property name="jdbcTemplate" ref="BSCSdataSource"/>	
+	</bean>       
+           
+    <!-- initialize the DB configurations, load them to memory -->
+	<bean id="Workflow" class="com.ericsson.ibp.configurationDB.Workflow" 
+		init-method="initializeAllWorkflows">
+		<property name="datasource" ref="BSCSdataSource"/>
+		<property name="utils" ref="dynamicUtils"/>
+	</bean>
+
+	<!-- initialize the thread pool that processes the requests -->
+	<bean id="ExecutorThreadPool" class="com.ericsson.ibp.process_executors.ExecutorThreadPool"
+		init-method="startThreadPool">
+		<property name="noOfThreads" value="${no_of_threads_in_pool}" />			<!-- no of threads in the pool -->
+	</bean>
+
+	<!-- initialize the velocity engine before the listener thread starts -->
+	<bean id="engineInitializer" class="com.ericsson.ibp.template.processor.EngineInitializer"
+		init-method="initializeEngine" />
+
+	<!-- initialize the class that reads the processing queue -->
+	<bean id="ReadProcessingQueue" 
+		class="com.ericsson.ibp.input.adapter.ReadProcessingQueue" init-method="startPolling"> 
+		<property name="dataSource" ref="BSCSdataSource" />	<!-- should read via BSCS datasource -->
+		<property name="pollingInterval" value="${poll_thread_sleep_interval}"/>
+		<property name="initialDelay" value="${poll_thread_startup_delay}"/>
+	</bean>
+
+	<!-- Others.. not necessary for production.. -->
+	<bean id="testTemplate" class="com.ericsson.ibp.template.processor.TestTemplate"
+		init-method="test" />
+		
+	
+</beans>
